@@ -1,0 +1,8 @@
+asset_id,angle,quality,fit,click,ai_yes_rate,not_sure_rate
+1,rational,3.79,4.07,2.86,1.0,0.0
+2,emotional,4.21,4.14,2.57,1.0,0.0
+3,humorous,3.36,4.14,3.5,1.0,0.0
+4,social,4.36,4.36,3.71,1.0,0.0
+5,driven,4.07,4.57,2.64,1.0,0.0
+6,rational,1.64,3.07,1.79,0.64,0.36
+7,emotional,1.93,2.5,1.79,0.57,0.43

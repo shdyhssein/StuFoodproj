@@ -1,0 +1,42 @@
+# config.yaml  (goes in the project ROOT, next to .env)
+# Everything you might want to change lives here, not in the code.
+
+prompt_version: "v1"
+
+# ---- Creative brief (keep CONSTANT for manual AND GenAI assets) ----
+brief:
+  product: "StuFood, a new meal-prep app for students"
+  audience: "Students aged 18-26 at German universities, tight budget, little time"
+  tone: "friendly, direct, a bit witty, a good bit of hype"
+  key_message: "Plan, shop and cook a week of cheap healthy and tasty meals in under 2 hours"
+
+# Different creative angles, cycled across assets for variety.
+# Delete or edit as you like. The brief above stays the same.
+angles:
+  - "rational: focus on saving money and time"
+  - "emotional: focus on feeling in control and less stressed"
+  - "humorous: light, self-aware student humor"
+  - "social: focus on cooking with flatmates and friends"
+  - "driven: focus on reaching a certain goal you've set"
+
+# ---- Models ----
+text_model: "gemini-3.1-flash-lite"      # worked in your probe. Fallback: gemini-3.6-flash
+image_model_planned: "gemini-3.1-flash-lite-image"   # NOT called. Used only for the modeled image price
+temperature: 2.0
+max_retries: 5
+
+# ---- Prices (USD) -> VERIFY on https://ai.google.dev/gemini-api/docs/pricing ----
+prices_usd:
+  text_input_per_1m_tokens: 0.25         # check current price for your text model
+  text_output_per_1m_tokens: 1.50        # check current price for your text model
+  image_per_image: 0.0336                # list price, 1K image, modeled only
+eur_per_usd: 0.86                        # update to today's rate
+
+# ---- Hourly rates for the cost model (EUR/h, illustrative) ----
+hourly_rates_eur:
+  student: 15
+  freelancer: 50
+  agency: 100
+
+# ---- Safety limit: stop a run if it would exceed this many assets ----
+max_assets_per_run: 40
