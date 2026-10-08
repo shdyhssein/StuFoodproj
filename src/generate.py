@@ -35,7 +35,7 @@ Write ONE ad. Return ONLY valid JSON with exactly these keys:
 - "headline": max 8 words
 - "body": 1-2 sentences, max 30 words
 - "image_prompt": a detailed prompt for an image generator describing one ad visual
-  (scene, style, colors, composition). The image must contain no real people's likenesses or copyright infringement, do not immitate existing ads.
+  (scene, style, colors, composition). The image must contain no real people's likenesses or copyright infringement, do not imitate existing ads.
 """
 
 

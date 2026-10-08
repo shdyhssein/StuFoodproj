@@ -1,0 +1,6 @@
+   pandas
+   scipy
+   matplotlib
+   python-dotenv
+   pyyaml
+   google-genai
